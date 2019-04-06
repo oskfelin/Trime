@@ -58,7 +58,7 @@
     <section class="container mt-5">
         <div class="row">
             <div class="col-sm-6">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="3000">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img class="d-block w-100" src="./assets/img/span1.jpg" alt="First slide">
@@ -230,7 +230,7 @@
             var paralaxOne = document.querySelector('.background-header');
 
             var scrollY = window.scrollY;
-            paralaxOne.style.backgroundPositionY = (scrollY / 10 ) + 'px';
+            paralaxOne.style.backgroundPositionY = (-scrollY / 8 ) + 'px';
         });
     }());
 
