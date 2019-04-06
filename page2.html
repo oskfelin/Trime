@@ -12,7 +12,7 @@
 
 
 <body>
-<header class="background-header" style="background-image: url('./assets/img/frontwynajem.jpg')">
+<header class="background-header" style="background-image: url('./assets/img/front3.jpg')">
 
 </header>
 <div class="nav-border sticky-top">
@@ -288,6 +288,13 @@
     </div>
 </footer>
 <script>
+    (function(){
+        window.addEventListener('scroll', function() {
+            var paralaxOne = document.querySelector('.background-header');
+            var scrollY = window.scrollY;
+            paralaxOne.style.backgroundPositionY = (scrollY / 10 ) + 'px';
+        });
+    }());
     const cookiesAccepted = localStorage.getItem('cookies');
     if (cookiesAccepted) {
         $('#cookiesBox').hide()
@@ -300,7 +307,7 @@
 
     const messageInput = $('#message');
     $('.rent-btn').click((e) => {
-        const size = $(e.target).data('size')
+        const size = $(e.target).data('size');
         messageInput.val(`Interesuje mnie namiot o wymiarze ${size}.`)
     })
 </script>

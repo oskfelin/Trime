@@ -28,7 +28,7 @@ body .background-header {
   height: 540px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position-x: center;
   position: relative;
 }
 body .background-header .header-titles {

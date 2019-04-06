@@ -12,7 +12,7 @@
 
 
 <body>
-<header class="background-header" style="background: url('./assets/img/front2.jpg')"></header>
+<header class="background-header" style="background-image: url('./assets/img/front2.jpg')"></header>
 <div class="nav-border sticky-top">
     <div class="container mb-0">
         <nav class="navbar navbar-expand-lg navbar-light sticky-top">
@@ -182,17 +182,6 @@
 <div id="cookiesBox">
     <span><a href="javascript:void;" id="acceptCookies">Akceptuję</a> politykę cookies. <a href="rodo.html" target="_blank">Link do RODO</a></span>
 </div>
-<script>
-    const cookiesAccepted = localStorage.getItem('cookies');
-    if (cookiesAccepted) {
-        $('#cookiesBox').hide()
-    }
-
-    $('#acceptCookies').click(() => {
-        localStorage.setItem('cookies', 'true');
-        $('#cookiesBox').hide()
-    })
-</script>
 <footer class="footer d-none d-sm-block">
     <div class="container-fluid">
         <div class="row">
@@ -208,6 +197,13 @@
     </div>
 </footer>
 <script>
+    (function(){
+        window.addEventListener('scroll', function() {
+            var paralaxOne = document.querySelector('.background-header');
+            var scrollY = window.scrollY;
+            paralaxOne.style.backgroundPositionY = (scrollY / 10 ) + 'px';
+        });
+    }());
     const cookiesAccepted = localStorage.getItem('cookies');
     if (cookiesAccepted) {
         $('#cookiesBox').hide()
@@ -223,6 +219,7 @@
         const size = $(e.target).data('size')
         messageInput.val(`Interesuje mnie namiot o wymiarze ${size}.`)
     })
+
 </script>
 </body>
 </html>
