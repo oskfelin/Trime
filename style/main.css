@@ -1,0 +1,151 @@
+body {
+  font-size: 87.5%;
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+body .container {
+  margin-bottom: 90px;
+}
+body .mb-90 {
+  margin-bottom: 90px;
+}
+body .mt-90 {
+  margin-top: 90px;
+}
+body .text-black {
+  color: #000 !important;
+}
+body .header-container:before {
+  display: block;
+  content: "";
+  width: 90px;
+  border-top: 3px solid #2fa8cb;
+  margin: 0;
+  padding-top: 15px;
+}
+body .background-header {
+  width: 100%;
+  height: 540px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+body .background-header .header-titles {
+  position: absolute;
+  bottom: 90px;
+  right: 60px;
+  color: #fff;
+}
+body .nav-border {
+  border-bottom: 3px #2fa8cb solid;
+  background-color: #fff;
+}
+body .navbar-light .navbar-nav .nav-link {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #000;
+  position: relative;
+}
+body .navbar-light .navbar-nav .nav-active {
+  position: relative;
+}
+body .navbar-light .navbar-nav .nav-active:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 17px;
+  height: 16px;
+  background-image: url("./../assets/img/logo_navbar.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: -18px;
+  bottom: 13px;
+}
+body h4 {
+  font-size: 1.2rem;
+}
+body .border-dotted {
+  border-bottom: 1px dotted #2fa8cb;
+}
+body .article-img {
+  background: url("./../assets/img/img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body .tent-bg {
+  height: calc(100% - 24px);
+}
+body .overflow-right-background {
+  width: 100vw;
+  position: relative;
+}
+body .center-logo {
+  background: url("./../assets/img/logo_glowna.png") no-repeat center center;
+}
+@media (max-width: 600px) {
+  body .center-logo {
+    background-size: 150px;
+  }
+}
+body .form-control {
+  border: 3px solid #2fa8cb;
+  border-radius: 0;
+}
+body .bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+body .rent-btn {
+  border: 2px solid #2fa8cb;
+  border-radius: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  transition: all 0.2s;
+}
+body .rent-btn:hover {
+  background: #2fa8cb;
+  color: #fff;
+}
+body .rent-btn:active {
+  bottom: 1px;
+}
+body .submit-btn {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  padding-right: 40px;
+  padding-left: 40px;
+  background-color: #2fa8cb;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 0;
+  font-weight: bold;
+}
+body .footer {
+  border-top: 3px solid #2fa8cb;
+  padding: 30px;
+}
+body .footer .logo-img {
+  margin-top: 10px;
+  width: 320px;
+}
+
+#cookiesBox {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 1;
+  box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/*# sourceMappingURL=main.css.map */

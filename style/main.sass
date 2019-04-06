@@ -1,0 +1,144 @@
+$blue: darken(#7fcbe1, 20)
+
+body
+  font-size: 87.5%
+  line-height: 1.4
+  overflow-x: hidden
+
+  .container
+    margin-bottom: 90px
+
+  .mb-90
+    margin-bottom: 90px
+
+  .mt-90
+    margin-top: 90px
+
+  .text-black
+    color: #000 !important
+
+  .header-container:before
+      display: block
+      content: ""
+      width: 90px
+      border-top: 3px solid $blue
+      margin: 0
+      padding-top: 15px
+
+  .background-header
+    width: 100%
+    height: 540px
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    position: relative
+    .header-titles
+      position: absolute
+      bottom: 90px
+      right: 60px
+      color: #fff
+
+  .nav-border
+    border-bottom: 3px $blue solid
+    background-color: #fff
+
+  .navbar-light
+    .navbar-nav
+      .nav-link
+        font-size: 20px
+        font-weight: 600
+        letter-spacing: 1px
+        color: #000
+        position: relative
+
+      .nav-active
+        position: relative
+        &:before
+          content: ''
+          display: block
+          position: absolute
+          width: 17px
+          height: 16px
+          background-image: url("./../assets/img/logo_navbar.png")
+          background-size: contain
+          background-repeat: no-repeat
+          left: -18px
+          bottom: 13px
+
+  h4
+    font-size: 1.2rem
+
+  .border-dotted
+    border-bottom: 1px dotted $blue
+
+  .article-img
+    background: url("./../assets/img/img.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+
+  .tent-bg
+    height: calc(100% - 24px)
+
+  .overflow-right-background
+    width: 100vw
+    position: relative
+
+  .center-logo
+    background: url("./../assets/img/logo_glowna.png") no-repeat center center
+    @media (max-width: 600px)
+      background-size: 150px
+
+
+  .form-control
+    border: 3px solid $blue
+    border-radius: 0
+
+  .bottom-right
+    position: absolute
+    bottom: 0
+    right: 0
+
+  .rent-btn
+    border: 2px solid $blue
+    border-radius: 0
+    font-size: 1.5rem
+    font-weight: bold
+    color: #000
+    transition: all 0.2s
+    &:hover
+      background: $blue
+      color: #fff
+    &:active
+      bottom: 1px
+
+  .submit-btn
+    position: absolute
+    right: 15px
+    bottom: 0
+    padding-right: 40px
+    padding-left: 40px
+    background-color: $blue
+    color: #fff
+    font-size: 1.5rem
+    border-radius: 0
+    font-weight: bold
+
+  .footer
+    border-top: 3px solid $blue
+    padding: 30px
+    .logo-img
+      margin-top: 10px
+      width: 320px
+
+#cookiesBox
+  position: fixed
+  bottom: 0
+  width: 100vw
+  height: 60px
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 1.1rem
+  background: rgba(255, 255, 255, 0.95)
+  z-index: 1
+  box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.1)
