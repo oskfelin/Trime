@@ -82,7 +82,8 @@ body .overflow-right-background {
   position: relative;
 }
 body .center-logo {
-  background: url("./../assets/img/logo_glowna.png") no-repeat center center;
+  background: url("./../assets/img/logo-gif.gif") no-repeat center center;
+  background-size: contain;
 }
 @media (max-width: 600px) {
   body .center-logo {
