@@ -35,8 +35,11 @@ body
     .header-titles
       position: absolute
       bottom: 90px
-      right: 60px
       color: #fff
+      right: 90px
+      text-shadow: #000 2px 2px 1px
+      @media (max-width: 600px)
+        right: 30px
 
   .nav-border
     border-bottom: 3px $blue solid

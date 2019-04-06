@@ -34,8 +34,14 @@ body .background-header {
 body .background-header .header-titles {
   position: absolute;
   bottom: 90px;
-  right: 60px;
   color: #fff;
+  right: 90px;
+  text-shadow: #000 2px 2px 1px;
+}
+@media (max-width: 600px) {
+  body .background-header .header-titles {
+    right: 30px;
+  }
 }
 body .nav-border {
   border-bottom: 3px #2fa8cb solid;
