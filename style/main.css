@@ -89,7 +89,7 @@ body .overflow-right-background {
 }
 body .center-logo {
   background: url("./../assets/img/logo-gif.gif") no-repeat center center;
-  background-size: contain;
+  background-size: 300px;
 }
 @media (max-width: 600px) {
   body .center-logo {
@@ -153,6 +153,13 @@ body .footer .logo-img {
   background: rgba(255, 255, 255, 0.95);
   z-index: 1;
   box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-title {
+  border-top: 2px solid #2fa8cb;
+  bottom: 20px;
+  left: 20px;
+  position: absolute;
 }
 
 /*# sourceMappingURL=main.css.map */
