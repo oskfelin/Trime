@@ -6,6 +6,30 @@
     <title>Trime - Namioty eventowe weselne imprezy Gdańsk Gdynia Trójmiasto</title>
     <meta name="description" content="Trime Gołębiewski | Wypożyczalnia i wynajem solidnych namiotów imprezowych na terenie Gdańska, Gdynii, Trójmiasta oraz Pomorza. Sprzedaż niezwykłych namiotów eventowych.
       Namioty sferyczne, kopuły. Produkcja nietypowych namiotów eventowych. "/>
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Trime - eleganckie i wytrzymałe namioty imprezowe na każdą okazję" />
+    <meta property="og:description" content="Trime Gołębiewski | Wypożyczalnia i wynajem solidnych namiotów imprezowych na terenie Gdańska, Gdynii, Trójmiasta oraz Pomorza. Sprzedaż niezwykłych namiotów eventowych. Namioty sferyczne, kopuły. Produkcja nietypowych namiotów eventowych." />
+    <meta property="og:url" content="https://www.trime.pl/" />
+    <meta property="og:site_name" content="TRIME" />
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <style>
         /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -398,13 +422,14 @@
                 </p>
             </article>
         </div>
-        <form class="form-group" action="form/contact.php" method="post">
+        <div id="successMsg" class="nav-border text-center my-4 p-1 font-weight-bold" style="font-size: 20px; display: none;">Dziękujemy za przesłanie zapytania!</div>
+        <form class="form-group" method="post">
             <div class="row">
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" placeholder="Podaj swoje imię" name="yourname">
+                    <input type="text" class="form-control" placeholder="Podaj swoje imię" name="yourname" required>
                 </div>
                 <div class="col-sm-6 mt-3 mt-sm-0">
-                    <input type="text" class="form-control" placeholder="Adres email" name="email">
+                    <input type="text" class="form-control" placeholder="Adres email" name="email" required>
                 </div>
                 <div class="col-12 mt-4 position-relative">
                     <textarea name="comments" id="message" class="form-control" rows="10"
@@ -416,7 +441,7 @@
     </section>
 </main>
 <div id="cookiesBox">
-    <span><a href="javascript:void;" id="acceptCookies">Akceptuję</a> politykę cookies. <a href="rodo.html" target="_blank">Link do RODO</a></span>
+    <span><a href="javascript:void;" id="acceptCookies">Akceptuję</a> politykę cookies. <a href="rodo.html" target="_blank">Polityka prywatności</a></span>
 </div>
 <footer class="footer d-none d-sm-block">
     <div class="container-fluid">
@@ -455,7 +480,24 @@
         const size = $(e.target).data('size');
         messageInput.val(`Proszę więcej informacji w sprawie zamówienia namiotu Trime-${size}.`)
     })
+    $('#contact_form').submit((e) => {
+        e.preventDefault();
+        const formData = new FormData();
+        formData.append("yourname", $('input[name="yourname"]').val());
+        formData.append("email", $('input[name="email"]').val());
+        formData.append("comments", $('textarea[name="comments"]').val());
 
+        $.ajax({
+            url: './../form/contact.php',
+            data: formData,
+            processData: false,
+            contentType: false,
+            type: 'POST',
+            success: function(){
+                $('#successMsg').show();
+            }
+        });
+    })
 </script>
 </body>
 </html>
