@@ -105,7 +105,7 @@
             position: absolute;
             width: 17px;
             height: 16px;
-            background-image: url("./assets/img/logo_navbar.png");
+            background-image: url("./../assets/img/logo_navbar.png");
             background-size: contain;
             background-repeat: no-repeat;
             left: -18px;
@@ -138,7 +138,7 @@
             background: url("./../assets/img/logo-gif.gif") no-repeat center center;
             background-size: 300px;
         }
-        @media (max-width: 700px) {
+        @media (max-width: 800px) {
             body .center-logo {
                 background-size: 150px;
             }
@@ -152,7 +152,7 @@
             bottom: 0;
             right: 0;
         }
-        @media (max-width: 700px) {
+        @media (max-width: 800px) {
             body .bottom-right {
                 position: static;
             }
@@ -212,6 +212,10 @@
             bottom: 20px;
             left: 20px;
             position: absolute;
+        }
+
+        .min-height-100 {
+            min-height: 100px;
         }
     </style>
     <script>
@@ -363,7 +367,7 @@
                     typu kotara oraz jedno wejście techniczne, a wszystko to montowane w
                     dowolnej konfiguracji.</p>
                 <div class="row">
-                    <ul class="list-unstyled col-sm-6">
+                    <ul class="list-unstyled col-md-6">
                         <li class="border-dotted">Miejsca stojące<span class="float-right">240</span></li>
                         <li class="border-dotted">Przy stołach<span class="float-right">190</span></li>
                         <li class="border-dotted">Bufet stojący<span class="float-right">205</span></li>
@@ -395,7 +399,7 @@
                 <p>Wyposażenie standardowe namiotu to osiem przeźroczystych ścian, osiem ścian pełnych, jedno wejście
                     typu kotara oraz jedno wejście techniczne które można zamontować w dowolnej konfiguracji.</p>
                 <div class="row">
-                    <ul class="list-unstyled col-sm-6">
+                    <ul class="list-unstyled col-md-6">
                         <li class="border-dotted">Miejsca stojące<span class="float-right">200</span></li>
                         <li class="border-dotted">Przy stołach<span class="float-right">160</span></li>
                         <li class="border-dotted">Bufet stojący<span class="float-right">165</span></li>
@@ -427,7 +431,7 @@
                     jest siedem ścian przezroczystych, pięć ścian pełnych, jedno wejście typu kotara oraz jedne drzwi
                     techniczne.</p>
                 <div class="row">
-                    <ul class="list-unstyled col-sm-6">
+                    <ul class="list-unstyled col-md-6">
                         <li class="border-dotted">Miejsca stojące<span class="float-right">140</span></li>
                         <li class="border-dotted">Przy stołach<span class="float-right">115</span></li>
                         <li class="border-dotted">Bufet stojący<span class="float-right">120</span></li>
@@ -459,7 +463,7 @@
                 <p>W komplecie do namiotu imprezowego dodane jest siedem ścian przezroczystych, pięć ścian pełnych,
                     jedno wejście typu kotara oraz jedne drzwi techniczne.</p>
                 <div class="row">
-                    <ul class="list-unstyled col-sm-6">
+                    <ul class="list-unstyled col-md-6">
                         <li class="border-dotted">Miejsca stojące<span class="float-right">120</span></li>
                         <li class="border-dotted">Przy stołach<span class="float-right">95</span></li>
                         <li class="border-dotted">Bufet stojący<span class="float-right">105</span></li>
@@ -493,7 +497,7 @@
                     Dodatkowo dostępne jest również jedno wejście techniczne oraz specjalnie dostosowane
                     oświetlenie.</p>
                 <div class="row">
-                    <ul class="list-unstyled col-sm-6">
+                    <ul class="list-unstyled col-md-6">
                         <li class="border-dotted">Miejsca stojące<span class="float-right">95</span></li>
                         <li class="border-dotted">Przy stołach<span class="float-right">68</span></li>
                         <li class="border-dotted">Bufet stojący<span class="float-right">75</span></li>
@@ -525,7 +529,7 @@
                 <p>Namiot wyposażony jest w pięć przeźroczystych ścian, jedno wejście typu kotara, trzy ściany pełne i
                     jedno wejście techniczne.</p>
                 <div class="row">
-                    <ul class="list-unstyled col-sm-6">
+                    <ul class="list-unstyled col-md-6">
                         <li class="border-dotted">Miejsca stojące<span class="float-right">75</span></li>
                         <li class="border-dotted">Przy stołach<span class="float-right">50</span></li>
                         <li class="border-dotted">Bufet stojący<span class="float-right">50</span></li>
@@ -557,7 +561,7 @@
                 <p>Namiot wyposażony jest w cztery przeźroczyste ściany, jedno wejście typu kotara oraz trzy ściany
                     pełne. Ich rozmieszczenie jest dowolne.</p>
                 <div class="row">
-                    <ul class="list-unstyled col-sm-6">
+                    <ul class="list-unstyled col-md-6">
                         <li class="border-dotted">Miejsca stojące<span class="float-right">42</span></li>
                         <li class="border-dotted">Przy stołach<span class="float-right">30</span></li>
                         <li class="border-dotted">Bufet stojący<span class="float-right">28</span></li>
@@ -668,8 +672,8 @@
     const messageInput = $('#message');
     $('.rent-btn').click((e) => {
         const size = $(e.target).data('size');
-        messageInput.val(`Proszę więcej informacji w sprawie zamówienia namiotu Trime-${size}.`)
-    })
+        messageInput.val(`Dzień dobry, \nproszę o więcej informacji w sprawie wynajmu namiotu Trime-${size}.`)
+    });
     $('#contact_form').submit((e) => {
         e.preventDefault();
         const formData = new FormData();
