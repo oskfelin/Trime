@@ -118,7 +118,7 @@
             border-bottom: 1px dotted #2fa8cb;
         }
         body .article-img {
-            background: url("./assets/img/img.jpg");
+            background: url("./../assets/img/img.jpg");
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -129,11 +129,16 @@
             width: 100vw;
             position: relative;
         }
-        body .center-logo {
-            background: url("./assets/img/logo-gif.gif") no-repeat center center;
-            background-size: contain;
-        }
         @media (max-width: 600px) {
+            body .overflow-right-background {
+                width: 100%;
+            }
+        }
+        body .center-logo {
+            background: url("./../assets/img/logo-gif.gif") no-repeat center center;
+            background-size: 300px;
+        }
+        @media (max-width: 700px) {
             body .center-logo {
                 background-size: 150px;
             }
@@ -146,6 +151,11 @@
             position: absolute;
             bottom: 0;
             right: 0;
+        }
+        @media (max-width: 700px) {
+            body .bottom-right {
+                position: static;
+            }
         }
         body .rent-btn {
             border: 2px solid #2fa8cb;
@@ -195,6 +205,13 @@
             background: rgba(255, 255, 255, 0.95);
             z-index: 1;
             box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-title {
+            border-top: 2px solid #2fa8cb;
+            bottom: 20px;
+            left: 20px;
+            position: absolute;
         }
     </style>
     <script>
@@ -347,10 +364,10 @@
                     dowolnej konfiguracji.</p>
                 <div class="row">
                     <ul class="list-unstyled col-sm-6">
-                        <li class="border-dotted">Miejsca stojące<span class="float-right">200</span></li>
-                        <li class="border-dotted">Przy stołach<span class="float-right">160</span></li>
-                        <li class="border-dotted">Bufet stojący<span class="float-right">165</span></li>
-                        <li class="border-dotted">Wesele<span class="float-right">100</span></li>
+                        <li class="border-dotted">Miejsca stojące<span class="float-right">240</span></li>
+                        <li class="border-dotted">Przy stołach<span class="float-right">190</span></li>
+                        <li class="border-dotted">Bufet stojący<span class="float-right">205</span></li>
+                        <li class="border-dotted">Wesele<span class="float-right">130</span></li>
                     </ul>
                 </div>
                 <div class="text-right bottom-right">
@@ -362,7 +379,7 @@
                     <figcaption class="m-0">
                         <span class="h5">200m<sup>2</sup></span>
                     </figcaption>
-                    <img class="w-100" src="./assets/img/przekroj1.svg" alt="przekroj-1">
+                    <img class="w-100" src="./assets/img/200.png" alt="przekroj namiotu">
                 </figure>
             </div>
         </div>
@@ -394,7 +411,169 @@
                     <figcaption class="m-0">
                         <span class="h5">160m<sup>2</sup></span>
                     </figcaption>
-                    <img class="w-100" src="./assets/img/przekroj1.svg" alt="przekroj-1">
+                    <img class="w-100" src="./assets/img/160.png" alt="przekroj namiotu">
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="container header-container">
+        <div class="row">
+            <article class="col-sm-6 position-relative">
+                <h5 class="h5">TRIME 125</h5>
+                <p>TRIME 125 to namiot bankietowy, którego nie powstydzi się żaden hotel. Elegancki i przestronny. Przy
+                    aranżacji przestrzeni pomocne są elementy konstrukcyjne dachu, które mogą służyć jako punkty
+                    mocowania oświetlenia, nagłośnienia czy też różnych ozdób. </p>
+                <p>W komplecie do namiotu imprezowego dodane
+                    jest siedem ścian przezroczystych, pięć ścian pełnych, jedno wejście typu kotara oraz jedne drzwi
+                    techniczne.</p>
+                <div class="row">
+                    <ul class="list-unstyled col-sm-6">
+                        <li class="border-dotted">Miejsca stojące<span class="float-right">140</span></li>
+                        <li class="border-dotted">Przy stołach<span class="float-right">115</span></li>
+                        <li class="border-dotted">Bufet stojący<span class="float-right">120</span></li>
+                        <li class="border-dotted">Wesele<span class="float-right">70</span></li>
+                    </ul>
+                </div>
+                <div class="text-right bottom-right">
+                    <a href="#kontakt" class="btn rent-btn" data-size="125">ZAMÓW</a>
+                </div>
+            </article>
+            <div class="col-sm-6 text-right">
+                <figure class="m-0">
+                    <figcaption class="m-0">
+                        <span class="h5">125m<sup>2</sup></span>
+                    </figcaption>
+                    <img class="w-100" src="./assets/img/125.png" alt="przekroj namiotu">
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="container header-container">
+        <div class="row">
+            <article class="col-sm-6 position-relative">
+                <h5 class="h5">TRIME 100</h5>
+                <p>TRIME 100 to namiot imprezowy idealny jako dodatkowa sala weselna czy powiększona przestrzeń
+                    restauracji. Stalowa konstrukcja dachu o industrialnym designie oświetlona girlandami żarówkowymi,
+                    przestronne przeźroczyste ściany, elegancki świetlik w szczycie kopuły - wszystko to tworzy
+                    niezapomniany widok.</p>
+                <p>W komplecie do namiotu imprezowego dodane jest siedem ścian przezroczystych, pięć ścian pełnych,
+                    jedno wejście typu kotara oraz jedne drzwi techniczne.</p>
+                <div class="row">
+                    <ul class="list-unstyled col-sm-6">
+                        <li class="border-dotted">Miejsca stojące<span class="float-right">120</span></li>
+                        <li class="border-dotted">Przy stołach<span class="float-right">95</span></li>
+                        <li class="border-dotted">Bufet stojący<span class="float-right">105</span></li>
+                        <li class="border-dotted">Wesele<span class="float-right">60</span></li>
+                    </ul>
+                </div>
+                <div class="text-right bottom-right">
+                    <a href="#kontakt" class="btn rent-btn" data-size="100">ZAMÓW</a>
+                </div>
+            </article>
+            <div class="col-sm-6 text-right">
+                <figure class="m-0">
+                    <figcaption class="m-0">
+                        <span class="h5">100m<sup>2</sup></span>
+                    </figcaption>
+                    <img class="w-100" src="./assets/img/100.png" alt="przekroj-1">
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="container header-container">
+        <div class="row">
+            <article class="col-sm-6 position-relative">
+                <h5 class="h5">TRIME 70</h5>
+                <p>TRIME 70 to idealny namiot imprezowy na średniej wielkości wydarzenia plenerowe. Piękna drewniana
+                    podłoga to nie tylko dobra akustyka wnętrza. Naturalny parkiet ociepla przestrzeń i zaprasza gości
+                    do tańca. Dodatkowy atut stanowi świetlik umieszczony u szczytu kopuły. TRIME 70 jak każdy nasz
+                    okrągły namiot jest wytrzymały, a przy tym elegancki.</p>
+                <p>Namiot wyposażyliśmy w sześć przeźroczystych
+                    ścian, jedno wejście typu kotara oraz pięć ścian pełnych, montowanych w dowolnej konfiguracji.
+                    Dodatkowo dostępne jest również jedno wejście techniczne oraz specjalnie dostosowane
+                    oświetlenie.</p>
+                <div class="row">
+                    <ul class="list-unstyled col-sm-6">
+                        <li class="border-dotted">Miejsca stojące<span class="float-right">95</span></li>
+                        <li class="border-dotted">Przy stołach<span class="float-right">68</span></li>
+                        <li class="border-dotted">Bufet stojący<span class="float-right">75</span></li>
+                        <li class="border-dotted">Wesele<span class="float-right">50</span></li>
+                    </ul>
+                </div>
+                <div class="text-right bottom-right">
+                    <a href="#kontakt" class="btn rent-btn" data-size="70">ZAMÓW</a>
+                </div>
+            </article>
+            <div class="col-sm-6 text-right">
+                <figure class="m-0">
+                    <figcaption class="m-0">
+                        <span class="h5">70m<sup>2</sup></span>
+                    </figcaption>
+                    <img class="w-100" src="./assets/img/70.png" alt="przekroj namiotu">
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="container header-container">
+        <div class="row">
+            <article class="col-sm-6 position-relative">
+                <h5 class="h5">TRIME 50</h5>
+                <p>TRIME 50 to namiot imprezowy idealnie przystosowany na większe imprezy w ogrodzie takie jak komunie
+                    czy urodziny. Namiot ten, zbudowany na planie 10-kąta, tworzy kameralną lecz wygodną przestrzeń.
+                    Doskonale wkomponuje się w ogród czy dziedziniec.
+                </p>
+                <p>Namiot wyposażony jest w pięć przeźroczystych ścian, jedno wejście typu kotara, trzy ściany pełne i
+                    jedno wejście techniczne.</p>
+                <div class="row">
+                    <ul class="list-unstyled col-sm-6">
+                        <li class="border-dotted">Miejsca stojące<span class="float-right">75</span></li>
+                        <li class="border-dotted">Przy stołach<span class="float-right">50</span></li>
+                        <li class="border-dotted">Bufet stojący<span class="float-right">50</span></li>
+                        <li class="border-dotted">W rzędach<span class="float-right">30</span></li>
+                    </ul>
+                </div>
+                <div class="text-right bottom-right">
+                    <a href="#kontakt" class="btn rent-btn" data-size="50">ZAMÓW</a>
+                </div>
+            </article>
+            <div class="col-sm-6 text-right">
+                <figure class="m-0">
+                    <figcaption class="m-0">
+                        <span class="h5">50m<sup>2</sup></span>
+                    </figcaption>
+                    <img class="w-100" src="./assets/img/50.png" alt="przekroj namiotu">
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="container header-container">
+        <div class="row">
+            <article class="col-sm-6 position-relative">
+                <h5 class="h5">TRIME 30</h5>
+                <p>Niewielki namiot imprezowy TRIME 30 można postawić w każdym miejscu. Zmieści się niemal w każdym
+                    ogródku, na placyku czy dziedzińcu. Idealny zarówno na komunie, garden party czy też festiwale i
+                    koncerty jako strefa relaksu lub punkt obsługi.
+                </p>
+                <p>Namiot wyposażony jest w cztery przeźroczyste ściany, jedno wejście typu kotara oraz trzy ściany
+                    pełne. Ich rozmieszczenie jest dowolne.</p>
+                <div class="row">
+                    <ul class="list-unstyled col-sm-6">
+                        <li class="border-dotted">Miejsca stojące<span class="float-right">42</span></li>
+                        <li class="border-dotted">Przy stołach<span class="float-right">30</span></li>
+                        <li class="border-dotted">Bufet stojący<span class="float-right">28</span></li>
+                        <li class="border-dotted">W rzędach<span class="float-right">32</span></li>
+                    </ul>
+                </div>
+                <div class="text-right bottom-right">
+                    <a href="#kontakt" class="btn rent-btn" data-size="30">ZAMÓW</a>
+                </div>
+            </article>
+            <div class="col-sm-6 text-right">
+                <figure class="m-0">
+                    <figcaption class="m-0">
+                        <span class="h5">30m<sup>2</sup></span>
+                    </figcaption>
+                    <img class="w-100" src="./assets/img/30.png" alt="przekroj namiotu">
                 </figure>
             </div>
         </div>
@@ -422,7 +601,7 @@
                 </p>
             </article>
         </div>
-        <div id="successMsg" class="nav-border text-center my-4 p-1 font-weight-bold" style="font-size: 20px; display: none;">Dziękujemy za przesłanie zapytania!</div>
+        <div id="successMsg" class="nav-border text-center my-4 p-1 font-weight-bold" style="font-size: 20px; display: none;">Dziękujemy za zapytanie. Wiadomość została do nas wysłana poprawnie.</div>
         <form class="form-group" method="post">
             <div class="row">
                 <div class="col-sm-6">
@@ -438,6 +617,17 @@
                 </div>
             </div>
         </form>
+        <div class="d-flex justify-content-around mt-5">
+            <a title="facebook" href="https://www.facebook.com/TRIME.NAMIOTY.EVENTOWE" target="_blank">
+                <img style="width: 48px; height: 48px;" src="./assets/img/facebook.png" alt="facebook">
+            </a>
+            <a title="linkedin" href="https://www.linkedin.com/company/trime-namioty_eventowe/" target="_blank">
+                <img style="width: 58px; height: 100%;" src="./assets/img/linkedin.png" alt="linkedin">
+            </a>
+            <a title="youtube" href="https://www.youtube.com/channel/UC6itubUcFtQcb4MzMXGSHTg" target="_blank">
+                <img style="width: 48px; height: 48px;" src="./assets/img/youtube.png" alt="youtube">
+            </a>
+        </div>
     </section>
 </main>
 <div id="cookiesBox">

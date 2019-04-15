@@ -10492,7 +10492,7 @@
             position: absolute;
             width: 17px;
             height: 16px;
-            background-image: url("./../assets/img/logo_navbar.png");
+            background-image: url("./assets/img/logo_navbar.png");
             background-size: contain;
             background-repeat: no-repeat;
             left: -18px;
@@ -10516,11 +10516,16 @@
             width: 100vw;
             position: relative;
         }
+        @media (max-width: 600px) {
+            body .overflow-right-background {
+                width: 100%;
+            }
+        }
         body .center-logo {
             background: url("./../assets/img/logo-gif.gif") no-repeat center center;
             background-size: 300px;
         }
-        @media (max-width: 600px) {
+        @media (max-width: 700px) {
             body .center-logo {
                 background-size: 150px;
             }
@@ -10533,6 +10538,11 @@
             position: absolute;
             bottom: 0;
             right: 0;
+        }
+        @media (max-width: 700px) {
+            body .bottom-right {
+                position: static;
+            }
         }
         body .rent-btn {
             border: 2px solid #2fa8cb;
@@ -10589,6 +10599,10 @@
             bottom: 20px;
             left: 20px;
             position: absolute;
+        }
+
+        .min-height-100 {
+            min-height: 100px;
         }
     </style>
     <script>
@@ -15091,7 +15105,7 @@
 <main>
     <section class="container mt-5 gallery">
         <div class="row">
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-3 position-relative">
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-3 position-relative min-height-100">
                 <span class="h2 gallery-title">TRIME 160</span>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
@@ -15310,7 +15324,7 @@
                     <img src="./assets/img/160thumb/160_44_m.jpg" alt="tent-5" class="w-100">
                 </a>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-3 position-relative">
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-3 position-relative min-height-100">
                 <span class="h2 gallery-title">TRIME 70</span>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
@@ -15505,7 +15519,7 @@
                     <img src="./assets/img/70thumb/trime_70_51_m.jpg" alt="tent-5" class="w-100">
                 </a>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-3 position-relative">
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-3 position-relative min-height-100">
                 <span class="h2 gallery-title">TRIME 25</span>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 mb-3">

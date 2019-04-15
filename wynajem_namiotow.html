@@ -118,7 +118,7 @@
             border-bottom: 1px dotted #2fa8cb;
         }
         body .article-img {
-            background: url("./assets/img/img.jpg");
+            background: url("./../assets/img/img.jpg");
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -129,11 +129,16 @@
             width: 100vw;
             position: relative;
         }
-        body .center-logo {
-            background: url("./assets/img/logo-gif.gif") no-repeat center center;
-            background-size: contain;
-        }
         @media (max-width: 600px) {
+            body .overflow-right-background {
+                width: 100%;
+            }
+        }
+        body .center-logo {
+            background: url("./../assets/img/logo-gif.gif") no-repeat center center;
+            background-size: 300px;
+        }
+        @media (max-width: 700px) {
             body .center-logo {
                 background-size: 150px;
             }
@@ -146,6 +151,11 @@
             position: absolute;
             bottom: 0;
             right: 0;
+        }
+        @media (max-width: 700px) {
+            body .bottom-right {
+                position: static;
+            }
         }
         body .rent-btn {
             border: 2px solid #2fa8cb;
@@ -195,6 +205,13 @@
             background: rgba(255, 255, 255, 0.95);
             z-index: 1;
             box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-title {
+            border-top: 2px solid #2fa8cb;
+            bottom: 20px;
+            left: 20px;
+            position: absolute;
         }
     </style>
     <script>
@@ -310,7 +327,7 @@
     <section class="container mt-5">
         <div class="row">
             <div class="col-12 mb-5">
-                <h2 class="h4">OFERTA NAMIOTÓW W RÓŻNYCH ROZMIARACH</h2>
+                <h2 class="h4">OFERTA NAMIOTÓW EVENTOWYCH W RÓŻNYCH ROZMIARACH</h2>
             </div>
         </div>
         <div class="row">
@@ -472,7 +489,7 @@
                         <li class="border-dotted">Miejsca stojące<span class="float-right">40</span></li>
                         <li class="border-dotted">Przy stołach<span class="float-right">28</span></li>
                         <li class="border-dotted">Bufet stojący<span class="float-right">25</span></li>
-                        <li class="border-dotted">Wesele<span class="float-right">30</span></li>
+                        <li class="border-dotted">W rzędach<span class="float-right">30</span></li>
                     </ul>
                 </div>
                 <div class="text-right bottom-right">
@@ -513,7 +530,7 @@
                 </p>
             </article>
         </div>
-        <div id="successMsg" class="nav-border text-center my-4 p-1 font-weight-bold" style="font-size: 20px; display: none;">Dziękujemy za przesłanie zapytania!</div>
+        <div id="successMsg" class="nav-border text-center my-4 p-1 font-weight-bold" style="font-size: 20px; display: none;">Dziękujemy za zapytanie. Wiadomość została do nas wysłana poprawnie.</div>
         <form class="form-group" method="post">
             <div class="row">
                 <div class="col-sm-6">
@@ -529,11 +546,21 @@
                 </div>
             </div>
         </form>
+        <div class="d-flex justify-content-around mt-5">
+            <a title="facebook" href="https://www.facebook.com/TRIME.NAMIOTY.EVENTOWE" target="_blank">
+                <img style="width: 48px; height: 48px;" src="./assets/img/facebook.png" alt="facebook">
+            </a>
+            <a title="linkedin" href="https://www.linkedin.com/company/trime-namioty_eventowe/" target="_blank">
+                <img style="width: 58px; height: 100%;" src="./assets/img/linkedin.png" alt="linkedin">
+            </a>
+            <a title="youtube" href="https://www.youtube.com/channel/UC6itubUcFtQcb4MzMXGSHTg" target="_blank">
+                <img style="width: 48px; height: 48px;" src="./assets/img/youtube.png" alt="youtube">
+            </a>
+        </div>
     </section>
 </main>
 <div id="cookiesBox">
-    <span><a id="acceptCookies">Akceptuję</a> politykę cookies. <a href="rodo.html"
-                                                                                           target="_blank">Polityka prywatności</a></span>
+    <span><a id="acceptCookies">Akceptuję</a> politykę cookies. <a href="rodo.html" target="_blank">Polityka prywatności</a></span>
 </div>
 <footer class="footer d-none d-sm-block">
     <div class="container-fluid">
@@ -570,7 +597,7 @@
     const messageInput = $('#message');
     $('.rent-btn').click((e) => {
         const size = $(e.target).data('size');
-        messageInput.val(`Proszę więcej informacji w sprawie wynajmu namiotu Trime-${size}.`)
+        messageInput.val(`Dzień dobry, \nproszę o więcej informacji w sprawie wynajmu namiotu Trime-${size}.`)
     })
     $('#contact_form').submit((e) => {
         e.preventDefault();

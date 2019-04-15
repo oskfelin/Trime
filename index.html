@@ -129,11 +129,16 @@
             width: 100vw;
             position: relative;
         }
+        @media (max-width: 700px) {
+            body .overflow-right-background {
+                width: 100%
+            }
+        }
         body .center-logo {
             background: url("./assets/img/logo-gif.gif") no-repeat center center;
             background-size: 300px;
         }
-        @media (max-width: 600px) {
+        @media (max-width: 700px) {
             body .center-logo {
                 background-size: 150px;
             }
@@ -460,7 +465,7 @@
                 </p>
             </article>
         </div>
-        <div id="successMsg" class="nav-border text-center my-4 p-1 font-weight-bold" style="font-size: 20px; display: none;">Dziękujemy za przesłanie zapytania!</div>
+        <div id="successMsg" class="nav-border text-center my-4 p-1 font-weight-bold" style="font-size: 20px; display: none;">Dziękujemy za zapytanie. Wiadomość została do nas wysłana poprawnie.</div>
         <form class="form-group" method="post" id="contact_form">
             <div class="row">
                 <div class="col-sm-6">
@@ -476,6 +481,17 @@
                 </div>
             </div>
         </form>
+        <div class="d-flex justify-content-around mt-5">
+            <a title="facebook" href="https://www.facebook.com/TRIME.NAMIOTY.EVENTOWE" target="_blank">
+                <img style="width: 48px; height: 48px;" src="./assets/img/facebook.png" alt="facebook">
+            </a>
+            <a title="linkedin" href="https://www.linkedin.com/company/trime-namioty_eventowe/" target="_blank">
+                <img style="width: 58px; height: 100%;" src="./assets/img/linkedin.png" alt="linkedin">
+            </a>
+            <a title="youtube" href="https://www.youtube.com/channel/UC6itubUcFtQcb4MzMXGSHTg" target="_blank">
+                <img style="width: 48px; height: 48px;" src="./assets/img/youtube.png" alt="youtube">
+            </a>
+        </div>
     </section>
 </main>
 

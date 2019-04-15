@@ -85,11 +85,13 @@ body
   .overflow-right-background
     width: 100vw
     position: relative
+    @media (max-width: 600px)
+      width: 100%
 
   .center-logo
     background: url("./../assets/img/logo-gif.gif") no-repeat center center
     background-size: 300px
-    @media (max-width: 600px)
+    @media (max-width: 700px)
       background-size: 150px
 
 
@@ -101,6 +103,8 @@ body
     position: absolute
     bottom: 0
     right: 0
+    @media (max-width: 700px)
+      position: static
 
   .rent-btn
     border: 2px solid $blue
@@ -152,3 +156,6 @@ body
   bottom: 20px
   left: 20px
   position: absolute
+
+.min-height-100
+  min-height: 100px

@@ -87,11 +87,16 @@ body .overflow-right-background {
   width: 100vw;
   position: relative;
 }
+@media (max-width: 600px) {
+  body .overflow-right-background {
+    width: 100%;
+  }
+}
 body .center-logo {
   background: url("./../assets/img/logo-gif.gif") no-repeat center center;
   background-size: 300px;
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   body .center-logo {
     background-size: 150px;
   }
@@ -104,6 +109,11 @@ body .bottom-right {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+@media (max-width: 700px) {
+  body .bottom-right {
+    position: static;
+  }
 }
 body .rent-btn {
   border: 2px solid #2fa8cb;
@@ -160,6 +170,10 @@ body .footer .logo-img {
   bottom: 20px;
   left: 20px;
   position: absolute;
+}
+
+.min-height-100 {
+  min-height: 100px;
 }
 
 /*# sourceMappingURL=main.css.map */
