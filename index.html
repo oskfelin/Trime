@@ -359,8 +359,8 @@
                     rozmieszczenie elementów nośnych i mocowań daje ogromne możliwości.</p>
                 <p>Idealnie sprawdzają się podczas wesel czy bankietów. Wysokie przeźroczyste ściany nadają
                     poczucia przestrzeni, a delikatne oświetlenie wprawia gości w magiczny nastrój.
-                    Elegancka i oryginalna bryła konstrukcji z daleka przyciągawzrok uczestników podczas
-                    większych wydarzeń. Bezpieczne namioty Trime sprawdzą się w każdej pogodzie.</p>
+                    Elegancka i oryginalna bryła konstrukcji z daleka przyciąga wzrok uczestników podczas
+                    większych wydarzeń. Bezpieczne namioty Trime sprawdzą się przy każdej pogodzie.</p>
                 <p class="mb-0">Innowacyjna konstrukcja namiotu eventowego Trime jest przedmiotem zgłoszenia
                     w Urzędzie Patentowym RP.</p>
             </article>
@@ -542,13 +542,16 @@
         formData.append("comments", $('textarea[name="comments"]').val());
 
         $.ajax({
-            url: './../form/contact.php',
+            url: './form/contact.php',
             data: formData,
             processData: false,
             contentType: false,
             type: 'POST',
             success: function(){
                 $('#successMsg').show();
+                $('input[name="yourname"]').val('');
+                $('input[name="email"]').val('');
+                $('textarea[name="comments"]').val('');
             }
         });
     })

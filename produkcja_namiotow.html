@@ -343,7 +343,7 @@
                     spotykano w konstrukcjach innowacyjnych mostów czy odważnych projektach dachów
                     hal sportowych, dziś może przyciągać wzrok Twoich gości. Prowadzimy sprzedaż
                     wytrzymałych, całorocznych namiotów eventowych.</p>
-                <p>Przy wykonaniu możliwe jest pomalowanie konstrukcji każdego namiotu w dowolnum
+                <p>Przy wykonaniu możliwe jest pomalowanie konstrukcji każdego namiotu w dowolnym
                     kolorze z palety RAL.</p>
             </div>
         </article>
@@ -672,7 +672,7 @@
     const messageInput = $('#message');
     $('.rent-btn').click((e) => {
         const size = $(e.target).data('size');
-        messageInput.val(`Dzień dobry, \nproszę o więcej informacji w sprawie wynajmu namiotu Trime-${size}.`)
+        messageInput.val(`Dzień dobry, \nproszę o więcej informacji w sprawie sprzedaży namiotu Trime-${size}.`)
     });
     $('#contact_form').submit((e) => {
         e.preventDefault();
@@ -682,13 +682,16 @@
         formData.append("comments", $('textarea[name="comments"]').val());
 
         $.ajax({
-            url: './../form/contact.php',
+            url: './form/contact.php',
             data: formData,
             processData: false,
             contentType: false,
             type: 'POST',
             success: function(){
                 $('#successMsg').show();
+                $('input[name="yourname"]').val('');
+                $('input[name="email"]').val('');
+                $('textarea[name="comments"]').val('');
             }
         });
     })
