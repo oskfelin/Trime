@@ -227,8 +227,10 @@ body .footer .logo-img {
   background-size: contain;
 }
 
-.blog-text {
-  white-space: pre-wrap;
+.lang-selector {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
