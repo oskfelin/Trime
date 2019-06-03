@@ -309,7 +309,7 @@
                     <figcaption>
                         <span class="h5">25m<sup>2</sup></span>
                     </figcaption>
-                    <img class="w-100" src="./assets/img/najm3.jpg" alt="namiot-3">
+                    <img class="w-100" src="./assets/img/najm3.png" alt="namiot-3">
                 </figure>
             </div>
         </div>
@@ -405,7 +405,7 @@
     const messageInput = $('#message');
     $('.rent-btn').click((e) => {
         const size = $(e.target).data('size');
-        messageInput.val(`Dzień dobry, \nproszę o więcej informacji w sprawie wynajmu namiotu Trime-${size}.`)
+        messageInput.val(`Dzień dobry, \nproszę o więcej informacji w sprawie wynajmu namiotu Trime-${size}.\nMiejsce wydarzenia: __________\nData imprezy:___________`)
     });
     $('#contact_form').submit((e) => {
         e.preventDefault();
